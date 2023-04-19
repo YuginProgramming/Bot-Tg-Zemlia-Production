@@ -11,7 +11,7 @@ import { googleFindMessageId } from './crawler.js';
 import { searchForNew } from './crawlerRaw.js';
 import { getSpreadsheetData } from "./filedata.js";
 
-const chatId = '-1001783798562';
+const chatId = '-1001984482993';
 
 let customerPhone;
 let customerName;

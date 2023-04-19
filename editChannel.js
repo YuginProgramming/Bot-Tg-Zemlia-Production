@@ -1,6 +1,6 @@
 import bot from "./app.js";
 import { googleFindMessageId } from "./crawler.js"
-const channelId = '-1001783798562';
+const channelId = '-1001984482993';
 
 // Працює хай живе
 const deleteButton = async () => {
