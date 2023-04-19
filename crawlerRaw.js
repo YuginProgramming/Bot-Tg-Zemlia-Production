@@ -20,7 +20,6 @@ import { getSpreadsheetData } from "./filedata.js";
 
 export { searchForNew };
 
-// const spreadsheetId = "1ORjtAykJySO0pzbmXO7LX9DAog5GqBZ_2NYh_89SRKA";  
 // const orderRaw = 5;
 // const range = `post!L${orderRaw}:N${orderRaw}`;
 // const hasNew = await searchForNew(spreadsheetId, range);

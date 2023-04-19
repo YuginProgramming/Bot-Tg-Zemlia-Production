@@ -12,7 +12,7 @@ anketa();
 anketaListiner();
 const chatIdTest = '-1001938112685'; // поки використовується як чат для логів
 const chatId = '-1001783798562'; // ID каналу
-export const spreadsheetId = "1ORjtAykJySO0pzbmXO7LX9DAog5GqBZ_2NYh_89SRKA";
+export const spreadsheetId = "1G_J_SOhLkYeO4UbLyWqqfFMYXc_N06_wPrxdaFL7_WQ";
   
 //============ це код відправки рядка в канал
 //перевірка чи цифра і вичитка рядка цифри
@@ -28,10 +28,10 @@ bot.on('message', async (message) => {
     const data = await getSpreadsheetData(spreadsheetId, range);
 
     if (data.values && data.values.length > 0) {
-      const message = data.values[0].join(' | ');
+      const message = data.values[0].join('\n');
       const button = {
         text: 'Скористайтеся ботом, щоб зробити замовлення',
-        url: 'https://t.me/api_gog_bot'
+        url: 'https://t.me/Buypie_tech_bot'
       };
       const keyboard = {
         inline_keyboard: [[button]]

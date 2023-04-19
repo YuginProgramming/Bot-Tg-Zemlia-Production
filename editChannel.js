@@ -21,7 +21,7 @@ const changeMessage = async (messageId, message) => {
   try {
     // Додати інформацію про колонку, номер рядка передається в анкеті в аргумент
     //const messageId = 527;
-    const newText = "🔴🔴🔴 Продано: " + message;
+    const newText = "📌 " + message;
     await bot.editMessageText(newText, {chat_id: channelId, message_id: messageId});
 
   } catch (err) {

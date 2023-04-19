@@ -1,9 +1,9 @@
 import { getClient, getSheetsInstance } from "./google.js";
 import { findStatusRaw } from "./getStatus.js";
 
-const spreadsheetId = "1ORjtAykJySO0pzbmXO7LX9DAog5GqBZ_2NYh_89SRKA";
+const spreadsheetId = "1G_J_SOhLkYeO4UbLyWqqfFMYXc_N06_wPrxdaFL7_WQ";
 
-// const spreadsheetId = "1ORjtAykJySO0pzbmXO7LX9DAog5GqBZ_2NYh_89SRKA";
+
 // const range = 'post!F5';
 // const data = [['Viktor']];
 

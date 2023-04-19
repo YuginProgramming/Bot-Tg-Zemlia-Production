@@ -16,7 +16,7 @@ const chatId = '-1001783798562';
 let customerPhone;
 let customerName;
 
-const spreadsheetId = "1ORjtAykJySO0pzbmXO7LX9DAog5GqBZ_2NYh_89SRKA";
+const spreadsheetId = "1G_J_SOhLkYeO4UbLyWqqfFMYXc_N06_wPrxdaFL7_WQ";
 const data = [];
 
 const phoneRegex = /^\d{10,12}$/;
@@ -131,7 +131,7 @@ bot.on('message', async (msg) => {
       const data = await getSpreadsheetData(spreadsheetId, range);
 
       if (data.values && data.values.length > 0) {
-      const message = data.values[0].join(' | ');
+      const message = data.values[0].join('\n');
       const idToDelete = await googleFindMessageId(selectedOrderRaw)
       await changeMessage(idToDelete, message);
       }

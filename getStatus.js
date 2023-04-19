@@ -3,7 +3,7 @@ import { getSpreadsheetData } from './crawler.js';
 
 //STATUS RANGE
 //====================
-const spreadsheetId = "1ORjtAykJySO0pzbmXO7LX9DAog5GqBZ_2NYh_89SRKA";
+const spreadsheetId = "1G_J_SOhLkYeO4UbLyWqqfFMYXc_N06_wPrxdaFL7_WQ";
 const sheetName = "post";
 const columnName = "N";
 //======================
