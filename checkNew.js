@@ -25,7 +25,7 @@ const sendNewRowsToTelegram = async (spreadsheetId, sheetName, triggerColumn, ch
     rowDataArray.forEach((rowData, index) => {
       if (rowData.values && rowData.values.length > 0) {
         const rowNumber = newRows[index];
-        const rowText = `Купити ділянку № ${rowNumber} | ${rowData.values[0].join(" | ")}`;
+        const rowText = `${rowNumber} \n ${rowData.values[0].join(" \n ")}`;
         rowTexts.push(rowText);
   
         // Send row text to Telegram
