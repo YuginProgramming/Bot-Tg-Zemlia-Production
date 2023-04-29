@@ -8,11 +8,12 @@ export default bot;
 import { sendToBaseMessageId } from './writegoog.js'
 import { getSpreadsheetData } from "./filedata.js";
 import { anketa, anketaListiner } from './anketa.js';
+import { dataBot } from './values.js';
 anketa();
 anketaListiner();
 const chatIdTest = '-1001938112685'; // поки використовується як чат для логів
 const chatId = '-1001984482993'; // ID каналу
-export const spreadsheetId = "1G_J_SOhLkYeO4UbLyWqqfFMYXc_N06_wPrxdaFL7_WQ";
+export const spreadsheetId = dataBot.googleSheetId;
   
 //============ це код відправки рядка в канал
 //перевірка чи цифра і вичитка рядка цифри

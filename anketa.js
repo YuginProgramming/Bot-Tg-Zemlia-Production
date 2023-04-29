@@ -10,13 +10,14 @@ import { changeMessage } from "./editChannel.js";
 import { googleFindMessageId } from './crawler.js';
 import { searchForNew } from './crawlerRaw.js';
 import { getSpreadsheetData } from "./filedata.js";
+import { dataBot } from './values.js';
 
 const chatId = '-1001984482993';
 
 let customerPhone;
 let customerName;
 
-const spreadsheetId = "1G_J_SOhLkYeO4UbLyWqqfFMYXc_N06_wPrxdaFL7_WQ";
+const spreadsheetId = dataBot.googleSheetId;
 const data = [];
 
 const phoneRegex = /^\d{10,12}$/;

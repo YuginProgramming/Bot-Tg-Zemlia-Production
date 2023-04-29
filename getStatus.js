@@ -1,9 +1,10 @@
 import { getSpreadsheetData } from './crawler.js';
+import { dataBot } from './values.js';
 
 
 //STATUS RANGE
 //====================
-const spreadsheetId = "1G_J_SOhLkYeO4UbLyWqqfFMYXc_N06_wPrxdaFL7_WQ";
+const spreadsheetId = dataBot.googleSheetId;
 const sheetName = "post";
 const columnName = "N";
 //======================

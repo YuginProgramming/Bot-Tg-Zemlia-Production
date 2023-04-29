@@ -1,4 +1,5 @@
 import { getSpreadsheetData } from "./filedata.js";
+import { dataBot } from './values.js';
 
 const getArrayFromColumn = async (spreadsheetId, sheetName, columnName) => {
     const range = `${sheetName}!${columnName}:${columnName}`;
@@ -75,7 +76,7 @@ const getCellValue = async (spreadsheetId, sheetName, columnName, rowNumber) => 
 };
 
 const googleFindMessageId = async (rowNumber) => {
-  const spreadsheetId = "1G_J_SOhLkYeO4UbLyWqqfFMYXc_N06_wPrxdaFL7_WQ";
+  const spreadsheetId = dataBot.googleSheetId;
   const sheetName = "post";
   const columnName = "L";
   const cellValue = await getCellValue(spreadsheetId, sheetName, columnName, rowNumber);

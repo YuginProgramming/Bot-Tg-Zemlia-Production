@@ -1,7 +1,8 @@
 import { getClient, getSheetsInstance } from "./google.js";
 import { findStatusRaw } from "./getStatus.js";
+import { dataBot } from './values.js';
 
-const spreadsheetId = "1G_J_SOhLkYeO4UbLyWqqfFMYXc_N06_wPrxdaFL7_WQ";
+const spreadsheetId = dataBot.googleSheetId;
 
 
 // const range = 'post!F5';
